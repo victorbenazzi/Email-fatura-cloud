@@ -1,0 +1,6 @@
+Informações sobre o Assunto do e-mail se encontra no arquivo: email-fatura-erp-summit.docx 
+
+Caso precise de um link para importar o html do e-mail você pode encontrá-lo aqui:
+https://cdn.jsdelivr.net/gh/victorbenazzi/Email-fatura-cloud@main/email-fatura-cloud.html
+
+Normalmente o RD Station pede que o e-mail seja nesse formato
