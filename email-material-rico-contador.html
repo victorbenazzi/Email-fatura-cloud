@@ -5,146 +5,222 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="x-apple-disable-message-reformatting" />
   <title>Boas Práticas para Segurança de Dados</title>
+  <!--[if mso]>
   <style type="text/css">
+    body, table, td {font-family: Arial, Helvetica, sans-serif !important;}
+  </style>
+  <![endif]-->
+  <style type="text/css">
+    /* Prevent WebKit and Windows mobile changing default text sizes */
+    body, table, td, p, a, li, blockquote {
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+    }
+
+    /* Remove spacing between tables in Outlook */
+    table, td {
+      -ms-table-lspace: 0pt;
+      -ms-table-rspace: 0pt;
+    }
+
+    /* Better image rendering for Outlook */
+    img {
+      -ms-interpolation-mode: bicubic;
+      display: block;
+      border: 0;
+      height: auto;
+      line-height: 100%;
+      outline: none;
+      text-decoration: none;
+    }
+
     body {
       margin: 0;
       padding: 0;
       background-color: #ffffff;
       font-family: Arial, sans-serif;
+      height: 100% !important;
+      width: 100% !important;
+      min-width: 100% !important;
     }
 
-    img {
-      display: block;
-      border: 0;
-      outline: none;
+    /* iOS blue links */
+    a[x-apple-data-detectors] {
+      color: inherit !important;
+      text-decoration: none !important;
+      font-size: inherit !important;
+      font-family: inherit !important;
+      font-weight: inherit !important;
+      line-height: inherit !important;
+    }
+
+    /* Gmail blue links */
+    u + #body a {
+      color: inherit;
       text-decoration: none;
-      -ms-interpolation-mode: bicubic;
+      font-size: inherit;
+      font-family: inherit;
+      font-weight: inherit;
+      line-height: inherit;
     }
 
-    table {
-      border-collapse: collapse;
-     
+    /* Samsung blue links */
+    #MessageViewBody a {
+      color: inherit;
+      text-decoration: none;
+      font-size: inherit;
+      font-family: inherit;
+      font-weight: inherit;
+      line-height: inherit;
     }
 
-    @media only screen and (max-width: 600px) {
-      table[class="container"] {
-        width: 100% !important;
-      }
+    .button {
+      background-color: #B099EB;
+      color: #ffffff !important;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: bold;
+      padding: 14px 28px;
+      border-radius: 30px;
+      display: inline-block;
+    }
 
-      td[class="responsive"] {
+    @media screen and (max-width: 600px) {
+      .container {
         width: 100% !important;
-        display: block !important;
-        padding: 0 20px !important;
+        max-width: 600px !important;
       }
-
-      img[class="responsive-img"] {
+      
+      .responsive-image {
         width: 100% !important;
         height: auto !important;
+        max-width: 600px !important;
+      }
+
+      .responsive-td {
+        width: 100% !important;
+        min-width: 100% !important;
+        display: block !important;
+      }
+
+      .padding {
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+      }
+
+      .stack {
+        display: block !important;
+        width: 100% !important;
       }
     }
   </style>
 </head>
 
-<body>
-  <table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#f5f5f5">
+<body style="margin: 0; padding: 0; background-color: #ffffff;">
+  <!--[if mso]>
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td align="center">
+  <![endif]-->
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
     <tr>
-      <td align="center">
-        <table width="600" cellpadding="12" cellspacing="0" border="0" class="container" bgcolor="#ffffff" style="margin: 20px auto; border-radius: 24px; overflow: hidden;">
+      <td align="center" style="padding: 20px 0;">
+        <table role="presentation" width="600" cellpadding="12" cellspacing="0" border="0" class="container" style="max-width: 600px; width: 100%; margin: 0 auto; background-color: #ffffff; border-radius: 24px; overflow: hidden;">
 
       <!-- Banner -->
           <tr>
-            <td align="center">
-              <img src="https://email-editor-production.s3.amazonaws.com/images/19178/capa-topo-email.png" alt="Boas Práticas para Segurança de Dados" width="600" class="responsive-img" />
+            <td align="center" class="responsive-td">
+              <img src="https://email-editor-production.s3.amazonaws.com/images/19178/capa-topo-email.png" alt="Boas Práticas para Segurança de Dados" width="600" class="responsive-image" style="width: 100%; max-width: 600px;" />
             </td>
           </tr>
 
-
-
-          <!-- Header -->
+          <!-- Title -->
           <tr>
-            <td align="left" style="padding: 30px 30px 20px 30px; font-size: 14px; color: #555555; line-height: 22px;">
-              <p>Olá!</p>
-              <p>
-                A rotina dos escritórios contábeis envolve a gestão de dados extremamente sensíveis — e isso vem com uma grande responsabilidade: garantir segurança, conformidade e rastreabilidade de cada informação armazenada ou compartilhada.
-              </p>
-              <p>Pensando nisso, preparamos um material exclusivo:</p>
-            </td>
-          </tr>
-
-          <tr>
-            <td align="left" style="padding: 30px 30px 20px 30px; font-size: 14px; color: #555555; line-height: 22px;">
+            <td align="left" class="responsive-td padding" style="padding: 30px 30px 20px 30px; font-size: 14px; color: #555555; line-height: 22px;">
               <strong style="font-size: 22px;">🛡️ Boas Práticas para Segurança de Dados</strong>
             </td>
           </tr>
 
-           
-<!-- Banner -->
+          <!-- Header -->
           <tr>
-            <td align="center">
-              <img src="https://email-editor-production.s3.amazonaws.com/images/19178/mid-image.png" alt="Boas Práticas para Segurança de Dados" width="600" class="responsive-img" />
+            <td align="left" class="responsive-td padding" style="padding: 30px 30px 20px 30px; font-size: 14px; color: #555555; line-height: 22px;">
+              <p style="margin: 0 0 15px 0;">Olá!</p>
+              <p style="margin: 0 0 15px 0;">
+                A rotina dos escritórios contábeis envolve a gestão de dados extremamente sensíveis — e isso vem com uma grande responsabilidade: garantir segurança, conformidade e rastreabilidade de cada informação armazenada ou compartilhada.
+              </p>
+              <p style="margin: 0;">Pensando nisso, preparamos um material exclusivo:</p>
+            </td>
+          </tr>
+
+          <!-- Banner -->
+          <tr>
+            <td align="center" class="responsive-td">
+              <img src="https://email-editor-production.s3.amazonaws.com/images/19178/mid-image.png" alt="Boas Práticas para Segurança de Dados" width="600" class="responsive-image" style="width: 100%; max-width: 600px;" />
             </td>
           </tr>
 
           <!-- Pilares -->
           <tr>
-            <td align="left" style="padding: 30px; font-size: 14px; color: #333333; line-height: 22px;">
-              <strong style="font-size: 16px;">Os 8 pilares essenciais para proteger dados e garantir conformidade com a LGPD.</strong>
-              <ul style="padding-left: 20px; margin-top: 15px;">
-                <li>📂 Como unificar arquivos em um ambiente seguro</li>
-                <li>🔍 Auditoria e rastreabilidade completa</li>
-                <li>🔐 Autenticação de dois fatores (2FA)</li>
-                <li>📁 Compartilhamento por competência</li>
-                <li>🧾 Criptografia de ponta</li>
-                <li>📜 Governança digital alinhada à LGPD</li>
-                <li>🏢 Hospedagem em data centers certificados</li>
-                <li>🧭 Soberania e segregação de dados</li>
+            <td align="left" class="responsive-td padding" style="padding: 30px; font-size: 14px; color: #333333; line-height: 22px;">
+              <strong style="font-size: 16px; display: block; margin-bottom: 15px;">Os 8 pilares essenciais para proteger dados e garantir conformidade com a LGPD.</strong>
+              <ul style="padding-left: 20px; margin: 0;">
+                <li style="margin-bottom: 8px;">📂 Como unificar arquivos em um ambiente seguro</li>
+                <li style="margin-bottom: 8px;">🔍 Auditoria e rastreabilidade completa</li>
+                <li style="margin-bottom: 8px;">🔐 Autenticação de dois fatores (2FA)</li>
+                <li style="margin-bottom: 8px;">📁 Compartilhamento por competência</li>
+                <li style="margin-bottom: 8px;">🧾 Criptografia de ponta</li>
+                <li style="margin-bottom: 8px;">📜 Governança digital alinhada à LGPD</li>
+                <li style="margin-bottom: 8px;">🏢 Hospedagem em data centers certificados</li>
+                <li style="margin-bottom: 0;">🧭 Soberania e segregação de dados</li>
               </ul>
             </td>
           </tr>
 
           <!-- CTA -->
           <tr>
-            <td align="center" style="padding: 20px 30px;">
+            <td align="center" class="responsive-td padding" style="padding: 20px 30px;">
               <!--[if mso]>
-              <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" href="#" style="height:45px;v-text-anchor:middle;width:280px;" arcsize="10%" strokecolor="#B099EB" fillcolor="#B099EB">
+              <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://optidata.cloud/optiwork/guia-seguranca-dados?utm_source=email&utm_medium=bavini&utm_campaign=guia_seguranca_dados" style="height:45px;v-text-anchor:middle;width:280px;" arcsize="60px" stroke="f" fillcolor="#B099EB">
                 <w:anchorlock/>
                 <center style="color:#ffffff;font-family:Arial,sans-serif;font-size:16px;font-weight:bold;">
                   👉 Acesse o Material Completo
                 </center>
               </v:roundrect>
               <![endif]-->
-              <![if !mso]>
-              <a href="https://optidata.cloud/optiwork/guia-seguranca-dados?utm_source=email&utm_medium=bavini&utm_campaign=guia_seguranca_dados" target="_blank" style="background-color: #B099EB; color: #ffffff; text-decoration: none; font-size: 16px; font-weight: bold; padding: 14px 28px; border-radius: 30px; display: inline-block;">
+              <!--[if !mso]><!-->
+              <a href="https://optidata.cloud/optiwork/guia-seguranca-dados?utm_source=email&utm_medium=bavini&utm_campaign=guia_seguranca_dados" target="_blank" class="button">
                 👉 Acesse o Material Completo
               </a>
-              <![endif]>
+              <!--<![endif]-->
             </td>
           </tr>
 
           <!-- Imagem da plataforma -->
           <tr>
-            <td align="center">
-              <img src="https://email-editor-production.s3.amazonaws.com/images/19178/tela-optidata.png" alt="Plataforma Optidata" width="600" class="responsive-img" />
+            <td align="center" class="responsive-td">
+              <img src="https://email-editor-production.s3.amazonaws.com/images/19178/tela-optidata.png" alt="Plataforma Optidata" width="600" class="responsive-image" style="width: 100%; max-width: 600px;" />
             </td>
           </tr>
 
           <!-- Rodapé -->
           <tr>
-            <td align="left" style="padding: 30px; font-size: 13px; color: #555555; line-height: 20px;">
-              Optiwork é a plataforma all-in-one da Optidata, pensada para unir colaboração, governança digital e segurança corporativa em um só lugar. Seus dados protegidos, seu escritório mais produtivo.
+            <td align="left" class="responsive-td padding" style="padding: 30px; font-size: 13px; color: #555555; line-height: 20px;">
+              <p style="margin: 0;">Optiwork é a plataforma all-in-one da Optidata, pensada para unir colaboração, governança digital e segurança corporativa em um só lugar. Seus dados protegidos, seu escritório mais produtivo.</p>
             </td>
           </tr>
 
           <tr>
-            <td style="padding: 0 0 30px 0;" align="center">
-              <img src="https://email-editor-production.s3.amazonaws.com/images/19178/logos.png" alt="Logo Optidata" width="290" style="margin-top: 10px;" />
+            <td class="responsive-td" style="padding: 0 0 30px 0;" align="center">
+              <img src="https://email-editor-production.s3.amazonaws.com/images/19178/logos.png" alt="Logo Optidata" width="290" class="responsive-image" style="width: 100%; max-width: 290px;" />
             </td>
           </tr>
         </table>
       </td>
     </tr>
   </table>
+  <!--[if mso]>
+  </td></tr></table>
+  <![endif]-->
 </body>
 
 </html>
